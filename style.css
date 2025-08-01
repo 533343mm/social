@@ -1,0 +1,472 @@
+* {
+    font-weight: bold;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+html,body {
+    background: linear-gradient(360deg, #0b3838, #193531);
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-text-hill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 7px;
+}
+
+.container-text-hill .text-h3-p {
+    position: absolute;
+    top: -25%;
+    text-align: center;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.container-text-hill .box-1 {
+    background-color: rgb(53, 50, 50);
+    width: 180px;
+    height: 200px;
+    border-radius: 6px;
+    border: 1px solid rgb(85, 84, 84);
+    position: relative;
+    top: -50px;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+    display: grid;
+
+}
+
+.container-text-hill .box-1 h3 {
+    margin-top: 15px;
+    font-size: 15px;
+}
+.container-text-hill .box-1 p {
+    line-height: 1.5;
+    color: #e9e5e5;
+    font-size: 8px;
+}
+.container-text-hill .box-1 .flex-items-center {
+    text-align: right;
+    direction: ltr;
+    margin-right: 10px;
+    font-size: 8px;
+}
+.box-1 .flex-items-center .fa-envelope {
+    color: rgb(7, 7, 165);
+}
+.box-1 .flex-items-center .fa-phone {
+    color: rgb(33, 165, 7);
+}
+.box-1 .flex-items-center .fa-location-dot {
+    color: rgb(165, 7, 7);
+}
+.box-1 .flex-items-center .text-social a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+
+
+.container-text-hill .box-2 {
+    background-color: rgb(53, 50, 50);
+    width: 170px;
+    height: 300px;
+    border-radius: 6px;
+    border: 1px solid rgb(85, 84, 84);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+}
+
+.container-text-hill .box-2 h3 {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.container-text-hill .box-2 input,
+.container-text-hill .box-2 textarea,
+.container-text-hill .box-2 button {
+    width: 90%;
+    height: 90%;
+    margin-top: 15px;
+    outline: none;
+    background-color: rgb(66, 63, 63);
+    border: 1px solid rgb(85, 84, 84);
+    border-radius: 3px;
+    text-align: right;
+    direction: rtl;
+}
+
+.container-text-hill .box-2 textarea {
+    height: 80px;
+    resize: none;
+}
+
+.container-text-hill .box-2 input {
+    padding: 10px;
+}
+.container-text-hill .box-2 button {
+    padding: 8px;
+    text-align: center;
+    direction: ltr;
+    color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+/* 
+repeat تكرار
+
+left top  أعلى اليسار
+
+fixed  مُثَبَّت
+
+right  يمين
+
+left bottom  أسفل اليسار
+
+right top  أعلى اليمين
+
+right bottom  أسفل اليمين
+
+center top  أعلى المنتصف
+
+center bottom  أسفل المنتصف
+
+cover  غلاف
+
+contain  يحتوي
+
+position  موضع
+
+attachment  مرفق
+
+size  مقاس
+
+background-size  حجم الخلفية
+
+background-position  موضع الخلفية
+
+background-attachment  ملحق الخلفية
+
+outline  الخطوط العريضة
+
+visibility: hidden الرؤية: مخفية
+
+width: fit-content  يخلي الخلفية بقياس النص
+
+text shadow: 0 0 0 red; عمل ضل النص
+
+direction: rtl; النص من اليمين لليسار
+
+direction: ltr; النص من اليسار لليمين
+
+text-transform: => يحول نص الى احرف كبيتال
+
+text-decoration: => زحرفة النص يعني يشيل حط تحت النص تسطير
+
+text-indent: 10px; => مسافة بادئة النص يعني يعمل مسافة للبداية ومكانة محفوضة
+
+line-height: 1.5; => يعمل مسافة بين الاسطر يعني ارتفاع الخط
+
+letter-spacing: 2px; => يعمل مسافة بين احرف 
+
+word-spacing: 2px => يعمل مسافة بين الكلمات ليس احرف لكن يفيد كلمات كتيرة 
+
+word-break: break-word => يدخل كلمات الطالعة خارج البوكس ويخليها تحت بعض
+
+    بعملان سوا قص نص الطالع خارج البوكس ويضهر 3 نقط ك ان يوجد نص
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    -------
+    p:hover {} =>
+        white-space: nowrap; => المساحة البيضاء: طبيعية يعني يخلي نص سطلع طبيعي ليس سطر واحد 
+
+
+    opacity: 0.7; => يعمل لشفافية المحتوى كامل مع نص و خلفية ايضا
+
+position: sticky; => يعمل المجتوى ثابت يعني ادا عندك محتوى فوق يبقة ثابت معك عنده رفع الصفحة
+position: relative;
+position: fixed; => مثبت يعمل نفس  sticky لاكن الاحسن تستخدم sticky لان يستخدم ال scroll وغيرها
+position: absolute; => مطلق يعني يتحرك لاي مكان تحدده
+
+z-index: 1; =>  مؤشر يعني يحدد اي عنصر يضهر فوق
+
+list-style: none; => لا تضهر النقاط ب صف الكلمة في ul
+
+
+#check:checked { } => فحص يعني مثل تدوس ع مربع صح يخفي label او يغير لونة
+a:visited {} => زار يعني يعمل لتغير لون عندة زيارة الصفحة حتى تعرف
+div:empty {} => فارغ يعني يغير لون اي شي في حال يكون العنصر او البكس يكون فارغ
+#text:focus {} => تركيز يعني يغير لون او border عندة الفوكس
+
+    cursor: not-allowed; => المؤشر: غير مسموح به؛ يطلع علامة الاستفهام
+
+
+outline: none; => لا يضهر الاطار الي ع انبوت input
+
+.two:selection {} => يعمل لون عندة تحديد النص 
+.one::first-line {} => السطر الاول يعني يغير لون اول سطر وغيرها من الستايلات 
+
+.one::before {} => يعمل عنصر مزيف ب استخدام css
+content: ""; => امر لكتابة عنصر المزيف
+
+transparent => شفاف يعني لا يوجد لون للخلفية
+
+counter-increment: اي اسم عادي للعداد : =>  
+يعمل العداد من 1 للاخير 
+.one::after {
+    content: counter(mohamed-counter اسم العداد);
+
+    transition-delay: 2s; => تأخير الأنتقال 
+
+:root {
+    --mainColor: white;
+    --mainBackground-color: red;
+    --mainPadding: 20px;
+    يغير ستايل المحتوى ب استخدام روت
+    مثال
+    padding: var(--mainPadding);
+}
+-------
+flex-flow: row wrap; => يخلي عناصر الجدد في الاسفل 
+    بدل مانكتب دني السطرين نكتب سطر الفوق احسن يعملان نفس المهام
+    flex-direction: row;
+    flex-wrap: wrap;
+------
+
+justify-content: space-between; => يعمل لتحديد مسافة بين العناصر و يوسط العناصر داخل بوكس
+justify-content: space-around; => يعمل لتحديد مسافة بين العناصر لكن اقل من سطر الاول و يوسط العناصر داخل بوكس
+justify-content: space-evenly; => يعمل لتحديد مسافة بين العناصر لكن اقل من سطر الثاني و يوسط العناصر داخل بوكس
+
+-------
+    يوسطان الكلمة في نص 
+    يوسط كل العناصر الي داخل بوكس 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+------
+
+align-items: flex-end+flex-start; =>  يعمل لتحديدمسافة بين العناصر ويوسط العناصر داخل بوكس او ينزلة او فوق 
+ملاحضة مايشتغل بدون display: flex;
+
+align-content: flex-end+flex-start; => ياخد الكونتينت كلها سوا فوق او تحت 
+align-self: center; => يعمل لتحديد مكان العنصر ب الكامل في البوكس مايشتغل بدون flex
+
+
+flex-grow: 1; => يعمل لنمو العناصر الي داخل بوكس مع بعض ب قياس واحد
+order: 2; => يعمل لتحديد ترتيب العناصر مثلا تخلي اول عنصر او رقم ب مكان رقم او عنصر اخر 
+
+filter: invert(0); => يعمل فلتر الصورة يغير لونه الى عادي ابيض اسود
+
+pointer-events:none; => أحداث المؤشر: لا شيء.. يعني يلغي انتقال الى رابط يصير حاله حال اي نص
+
+----------
+display: grid;
+grid-template-columns: repeat(3, 1fr); => يوزع العناصر ب شكل حلو ومرتب 
+نكدر ايضا نستخدم px+%+auto;
+auto => يعني الخجول بالعناصر مايقبل زيادة ياخد ع طدة
+1fr او Fraction => يعني الطماع يعني ياخد مساحة الباقية ايضا
+
+grid-template-rows:   100px auto 100px ; => يتحكم ب قياس الطول يعني height;
+                        اول صف  ثاني و ثالث
+
+grid-template-areas: "logo logo logo  nav nav nav nav nav nav nav"
+"cont cont cont cont cont cont cont cont side side"
+"foot foot foot foot foot foot foot foot foot foot";
+تكتب ع عدد الي كاتبة في (grid-template-columns)
+على عدد الاعمدة الي مسوي 
+
+ملاحضة لازم تعرفة حتى يشتغل 
+h2 {
+    grid-area: logo;
+    background-color: red;
+    color: #eee;
+}
+
+.child5 {
+    grid-column: span 2;
+    يمدد الرقم او العنصر الي داخل بوكس ليس رقم بل الخلفية والعنصر يبقة ب نص
+}
+
+هدا يخلي العناصر يتفاعل في الصفحة يعني شكد ماتصغر الصفحة العناصر هم تصغر 
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+------
+
+transform: scaleX(1); => يعمل لتكبير اتجاه اكس X  
+transform: scaleY(1); => يعمل لتكبير اتجاه واي Y
+transform: rotate(90deg); => يعمل ب اتجاه عمودي يعني column
+transform: translate(50% 50%); يعمل ب اتجاه صق بعني row
+
+يعملا نفس الشغل والترتيب 
+transform-origin: 50% 50%; يعني المركز
+transform-origin: bottom right; يعني اريد تحت واليمين يفتر من جهت اليمين
+transform-origin: left top; يعني اريد يروح فوك ويفتر من جهت اليسار 
+....
+
+يعملان نفس الشغل والترتيب
+transform: translateX(20px) translateY(20px) scaleX(1.2) skewY(15deg) skewX(0deg) scaleY(1.2);
+transform: matrix(1.2, 0.2679, 0, 1.2, 20, 20);
+....
+
+perspective: 300px; => تكتب حجم الاب كم الاصلي
+الاصلي مهم هاد والفوق 
+transform-style: preserve-3d;
+
+perspective-origin: bottom left ;
+لازم ينكتب perspective حتى يشتغل الزوم  
+
+نكتب سطر الاول في الاب حتى يشتغل هاد
+transform: translate3d( 0, 0, 30px);
+يوجد 
+X,Y,Z,3d
+.....
+
+scale => الحجم يعني تكبير 
+rotate => تدوير يعني تغير الاتجاه
+translate => يعمل ك بديل او شبيه ال خاصية (margin)
+skewX + skewY => انحراف يعني يعوجها بالاتجاهات
+
+
+هدي يعملا بعد الخصائص الي فوق 
+deg => درجة 
+
+turn => دوران
+
+grad => تدرج يعني يعمل دوران بدون درجة يفرها ويرجعها 
+-----------
+3d
+رؤية الوجه الخلفي
+backface-visibility: hidden;
+
+hover{
+    transform: rotateY(-180deg);
+}
+    تحويل تدوير
+transform: rotateY(180deg);
+وجهة نظر ابعاد او اقتراب 
+perspective: 600px;
+نمط التحويل: الحفاظ على الأبعاد الثلاثية
+بدونه ماتكدر تشوف الوجه الخلي 
+transfomr-style: preserve-3d;
+......
+
+    مدة الرسوم المتحركة: 1 ثانية؛
+    animation-duration: 1s;
+    اسم الرسوم 
+    animation-name: span;
+    عدد تكرارات الرسوم المتحركة: لا نهائي؛
+    animation-iteration-count: infinite;
+    دالة توقيت الرسوم المتحركة: خطي;  يعني يمشي بدون تقطيع
+    animation-timing-function: linear;
+
+    @keyframes span {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+animation
+-direction -الاتجاه
+-delay -التأخير
+-fill-mode -وضع التعبئة
+-play-state -حالة التشغيل
+.....
+
+-:first-child >= الطفل الأول
+-:last-child >= الطفل الأخير
+-:first-of-type >= الأول من نوعه
+-:last-of-type >= الأخير من نوعه
+-:only-of-type >= النوع الوحيد
+-div:nth-last-child(4) => تحدد الطفل الي تريد تعدلة  من رقمة
+- :nth-last-of-type(الرقم) => نفس الي فوق 
+- p:not(:last-child) => كل العناصر الى الاخير not يعني لا
+------
+تكدر تغير لون الخلفية كلشي اثناء تغير حجم الشاشة 
+@media  (min-width: 500px) and (max-width: 1000px) {
+    .box {
+        background-color: red;
+    }
+}
+
+    Mobile => للاجهزة المحمولة
+@media (max-width: 767px) {
+    .parent div {
+    width: calc(100% - 10px);
+    }
+}
+
+Small Screen => شاشة صغيرة 
+@media (min-width: 768px) {
+    .parent div {
+    width: calc(50% - 5px);
+    }
+}
+
+Medium Screen => شاشة متوسطة  
+@media (min-width: 992px) {
+    .parent div {
+    width: calc(25% - 5px);
+    }
+}
+
+Large Screen => شاشة كبيرة
+@media (min-width: 1200px) {
+    .parent div {
+    width: calc(50% - 10px);
+    }
+}
+
+
+inset: 4px; => وضيفتة
+يعني 
+top: 4px;
+right: 4px;
+bottom: 4px;
+left: 4px;
+
+
+
+
+
+ملاحضة 
+after {
+يعني يعمل بعد النص وغيروها 
+}
+
+before {
+يعمل قبل النص وغيرها 
+before 
+تكدر تستعملة بدون 
+HTML
+تعمل بها اشكال والوان
+}
+
+
+
+
+
